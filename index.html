@@ -1,79 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cripto live</title>
-    <!-- <style>
-         body {
-      background-color: white
-    }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cripto live</title>
 
-    /* Pantallas de menos de 992px de ancho */
-    @media screen and (max-width: 992px) {
-      body {
-        background-color:white;
-      }
-    }
-
-    /* Pantallas de menos de 600px de ancho */
-    @media screen and (max-width: 600px) {
-      body {
-        background-color: black;
-      }
-    }
-    </style> -->
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-secondary"> 
-        <div class="container-fluid">
-            <h1 class="navbar-brand" href="#">Cripto Live 24/7</h1>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav justify-content-center">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                 
-                 
-                </ul>
-                
-              </div>
-        </div>
-       </nav>
-    <div class=".bg-dark-subtle justify-content-center">
-         <h1 class=".bg-dark-subtle" id="stock-price">---</h1>
 
-        <div class="card-body .bg-dark-subtle" id="style-BTC">
-             <h2 class="card-title" id="name">....</h2>
-             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    
-        </div>
-
-
-
-
-        <div class=".bg-dark-subtle">
-           
-            <h1 class=".bg-dark-subtle " id="priceEth">...</h1>
-            <div class="card-body">
-                <h2 class="card-title" id="nameEth">...</h2>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-            
-        </div>
-       
-    
-    <script src="app.js"></script>
+<body class="">
+ 
+  <nav class="navbar bg-light">
+    <div class="container-fluid">
+      <h1 class="navbar-brand text-decoration-underline fw-bold " href="#">
+        <img src="./logo.png" alt="Logo" width="50" height="50" class="d-inline-block ">
+       Cripto Live
+      </h1>
     </div>
+  </nav>
+  
+
     
+
+
+   
+   
+      <div class="border rounded m-2  "  >
+      <h1 class="d-flex justify-content-center border m-1 " id="stock-price"><div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden"></span>
+        </div>
+      </div></h1>
+
+      <div class="card-body " id="style-BTC">
+        <div class="">
+        <h2 class="card-title d-flex justify-content-center" id="name">....</h2>
+        <div class="border rounded border-success shadow-lg p-3 mb-5 bg-body-tertiary rounded ">
+          <p>Buyer order</p>
+          <p class=" card-text green text-success " id="buyer-order"></p>
+        </div>
+        <div class=" mt-1 border rounded border-danger shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+          <p>Seller order</p>
+        <p class="card-text green text-danger" id="seller-order"></p>
+        </div>
+        <p class="card-text"><small class="text-muted">Last updated 1 second ago</small></p>
+      </div>
+      </div>
+    </div>
+
+
+
+      <div class="border rounded m-2">
+
+        <h1 class=".bg-dark-subtle border d-flex justify-content-center border m-1" id="priceEth"><div class="d-flex justify-content-center">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden"></span>
+          </div>
+        </div></h1>
+        <div class="card-body">
+          <h2 class="card-title d-flex justify-content-center" id="nameEth">...</h2>
+
+           <div class="border rounded border-success shadow-lg p-3 mb-5 bg-body-tertiary rounded ">
+          <p>Buyer order</p>
+          <p class=" card-text green text-success " id="buyer-orderEth"></p>
+        </div>
+        <div class=" mt-1 border rounded border-danger shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+          <p>Seller order</p>
+        <p class="card-text green text-danger" id="seller-orderEth"></p>
+        </div>
+        <p class="card-text"><small class="text-muted">Last updated 1 second ago</small></p>
+        </div>
+
+      </div>
+
+    
+
+    <script src="app.js"></script>
+  
+
 </body>
+
 </html>
