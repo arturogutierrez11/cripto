@@ -30,7 +30,7 @@ ws.onmessage = (event) => {
      sellBtc.innerText = stockObject.a
 
    
-    // nameCoin.style.color = !lastprice || lastprice === price ? "black" : price > lastprice ? "green" : "red"
+    nameCoin.style.color = !lastprice || lastprice === price ? "black" : price > lastprice ? "green" : "red"
     stockPrice.style.color = !lastprice || lastprice === price ? "black" : price > lastprice ? "green" : "red"
     lastprice = price;
 }

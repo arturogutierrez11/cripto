@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cripto live</title>
+
+</head>
+
+<body class="bg-dark">
+ 
+  
+
+    <a href="./index.html" class="btn btn-primary ml-1 mt-2">inicio</a>
+  
+  
+
+    
+
+  
+   
+   
+      <div class="border rounded m-2 bg-light "  >
+      <h1 class="d-flex justify-content-center border m-1 " id="stock-price"><div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden"></span>
+        </div>
+      </div></h1>
+
+      <div class="card-body " id="style-BTC">
+        <div class="">
+        <h2 class="card-title d-flex justify-content-center" id="name">....</h2>
+        <div class="border rounded border-success shadow-lg p-3 mb-5 bg-body-tertiary rounded ">
+          <p>Buyer order</p>
+          <p class=" card-text green text-success " id="buyer-order"></p>
+        </div>
+        <div class=" mt-1 border rounded border-danger shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+          <p>Seller order</p>
+        <p class="card-text green text-danger" id="seller-order"></p>
+        </div>
+        <p class="card-text"><small class="text-muted">Last updated 1 second ago</small></p>
+      </div>
+      </div>
+    </div> 
+
+
+
+      
+
+    
+
+    <script src="app.js"></script>
+  
+
+</body>
+
+</html>
